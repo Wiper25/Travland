@@ -2,7 +2,7 @@
   <div id="app">
     <div id="filter">
       <div id="conteiner">
-        <headerSite />
+        <headerSite class="headerSite" />
         <popularLocat />
         <sliderLocat />
         <newsLocat />
@@ -33,9 +33,11 @@ export default {
 
 <style>
 * {
+  box-sizing: border-box;
+}
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 #app {
   background-image: url("./assets/background.png");
@@ -52,5 +54,11 @@ export default {
 #conteiner {
   max-width: 1200px;
   margin: 0 auto;
+}
+.headerSite {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 </style>

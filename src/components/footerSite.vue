@@ -5,10 +5,10 @@
     <div class="legal"></div>
     <div class="subscribe">
       <h1></h1>
-      <form action="">
+      <!-- <form action="">
         <input type="text" />
         <input type="submit" value="" />
-      </form>
+      </form> -->
     </div>
   </div>
 </template>

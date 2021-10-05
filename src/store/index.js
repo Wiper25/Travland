@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -14,26 +13,26 @@ export default new Vuex.Store({
     popularContent: {
       contentText: {
         title: 'Popular Location',
-        text: `'For every one of us, travel came first.We’ve spent years living as nomads, pioneers, and voyagers— from island hopping in the`
+        text: `'For every one of us, travel came first. We’ve spent years living as nomads, pioneers, and voyagers— from island hopping in the`
       },
-      Card: [{
+      cardCity: {
         turkey: {
           img: '../assets/imgTurkey.png',
           title: 'Istanbul, Turkey',
           text: 'Istanbul is a major city in Turkey that straddles Europe.'
         },
         malaysia: {
-          img: '../assets/imgTurkey.png',
+          img: '../assets/imgKuala.png',
           title: 'Kuala Lumpur, malaysia',
           text: 'A 272-step long trek leads you to this century.'
         },
         korea: {
-          img: '../assets/imgTurkey.png',
+          img: '../assets/imgKorea.png.png',
           title: 'Seoul, South Korea',
           text: 'South Korea officially the Republic of Korea is a country in East Asia.'
 
         }
-      }]
+      }
     },
     sliderContent: {
       contentText: {
@@ -81,7 +80,6 @@ export default new Vuex.Store({
           term: '4 Day 5 Nights',
           price: '$700/person'
         }
-
       }
     },
     newsContent: {
