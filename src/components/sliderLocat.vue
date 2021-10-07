@@ -8,6 +8,7 @@
         {{ text.text }}
       </p>
     </div>
+
     <div class="sliderBlock">
       <div
         v-for="(slid, i) in this.$store.getters.SLIDER.sliderCard"
@@ -38,12 +39,20 @@ export default {
 </script>
 
 <style scoped>
+* {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
 .sliderBlock {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .city_grade {
   display: flex;
   justify-content: space-between;
+}
+h3,
+h1 {
+  font-family: "Gelasio", serif;
 }
 </style>

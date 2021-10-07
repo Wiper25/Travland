@@ -1,18 +1,5 @@
 <template>
   <div class="headerSite">
-    <div class="nav">
-      <div class="logo">
-        <img :src="this.$store.getters.HEAD.logo" alt="" />
-      </div>
-      <div
-        v-for="(btn, i) in this.$store.getters.HEAD.nav"
-        :key="i"
-        class="menu"
-      >
-        {{ btn }}
-      </div>
-      <button class="go">{{ this.$store.getters.HEAD.btn[0] }}</button>
-    </div>
     <div class="contentHeader">
       <h1>{{ this.$store.getters.HEAD.contentText[0] }}</h1>
       <p>{{ this.$store.getters.HEAD.contentText[1] }}</p>
@@ -30,21 +17,8 @@ export default {
 </script>
 
 <style scoped>
-.nav {
-  width: 100%;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  font-size: 17px;
-  padding-top: 20px;
-}
-.menu {
-  display: flex;
-  align-items: center;
-}
-.menu:hover {
-  border-bottom: 3px solid white;
-  cursor: pointer;
+* {
+  font-family: "Roboto", sans-serif;
 }
 .contentHeader {
   color: white;
@@ -69,5 +43,8 @@ button {
 }
 .margin {
   margin-top: 100px;
+}
+h1 {
+  font-family: "Gelasio", serif;
 }
 </style>

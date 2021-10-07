@@ -1,12 +1,15 @@
 <template>
   <div id="app">
     <div id="filter">
-      <div id="conteiner">
-        <headerSite class="headerSite" />
-        <popularLocat />
-        <sliderLocat />
-        <newsLocat />
-        <footerSite />
+      <div id="container">
+        <navig />
+        <div id="content">
+          <headerSite class="headerSite" />
+          <popularLocat />
+          <sliderLocat />
+          <newsLocat />
+          <footerSite />
+        </div>
       </div>
     </div>
   </div>
@@ -14,6 +17,7 @@
 
 <script>
 import headerSite from "./components/headerSite.vue";
+import navig from "./components/navig.vue";
 import popularLocat from "./components/popularLocat.vue";
 import sliderLocat from "./components/sliderLocat.vue";
 import newsLocat from "./components/newsLocat.vue";
@@ -23,6 +27,7 @@ export default {
   name: "App",
   components: {
     headerSite,
+    navig,
     popularLocat,
     sliderLocat,
     newsLocat,
@@ -47,11 +52,13 @@ body {
   height: 100vh;
 }
 #filter {
+  height: 200px;
+  height: 100vh;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.384);
 }
-#conteiner {
+#container {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -60,5 +67,22 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+#content {
+  overflow: auto;
+  height: 85vh;
+  margin-top: 20px;
+}
+#content::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+#content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#content::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
 </style>

@@ -11,10 +11,8 @@ export default new Vuex.Store({
       contentText: ['Railtrips To Here, There And Everywhere!', 'We all wish to start our year the best way possible and also according to a common belief if you have a great start to your.']
     },
     popularContent: {
-      contentText: {
-        title: 'Popular Location',
-        text: `'For every one of us, travel came first. We’ve spent years living as nomads, pioneers, and voyagers— from island hopping in the`
-      },
+      title: 'Popular Location',
+      text: `For every one of us, travel came first. We’ve spent years living as nomads, pioneers, and voyagers— from island hopping in the`,
       cardCity: {
         turkey: {
           img: '../assets/imgTurkey.png',
@@ -35,10 +33,8 @@ export default new Vuex.Store({
       }
     },
     sliderContent: {
-      contentText: {
-        title: 'Special Offers',
-        text: 'With the New Year comes a refreshing sense of wanderlust, a longing in our souls to escape to warmer climates, ',
-      },
+      title: 'Special Offers',
+      text: 'With the New Year comes a refreshing sense of wanderlust, a longing in our souls to escape to warmer climates, ',
       sliderCard: {
         newYork: {
           img: '../assets/newYork.png',
@@ -83,16 +79,14 @@ export default new Vuex.Store({
       }
     },
     newsContent: {
-      contentText: {
-        title: 'Osaka Castle',
-        context: 'Welcome to Community Conversations, a new interview series featuring Intrepid travellers, creatives and activists in our community.'
+      title: 'From Blog & News',
+      context: 'Welcome to Community Conversations, a new interview series featuring Intrepid travellers, creatives and activists in our community.',
+      homeCard: {
+        img: '../assets/nationalPark.png',
+        title: 'Banff National Park',
+        text: "Banff National Park lies in the heart of the majestic Rocky Mountains in the province of Alberta, and showcases some of Canada's most beautiful scenery. Turquoise-colored lakes, snow-capped peaks, and glaciers are all easily accessible"
       },
       newsCard: {
-        nationalPark: {
-          img: '../assets/nationalPark.png',
-          title: 'Banff National Park',
-          text: "Banff National Park lies in the heart of the majestic Rocky Mountains in the province of Alberta, and showcases some of Canada's most beautiful scenery. Turquoise-colored lakes, snow-capped peaks, and glaciers are all easily accessible"
-        },
         hiroshimaPeace: {
           img: '../assets/hiroshimajapan.png',
           title: 'The Hiroshima Peace!',
@@ -111,15 +105,17 @@ export default new Vuex.Store({
       }
     },
     footerContent: {
-      contactBlock: {
+      contacts: {
         logo: '../assets/logo.png',
         text: 'Contact us',
         email: '@shovasatkhira88.com',
-        icon: ['../assets/facebookIcon.png', '../assets/instaIcon.png', '../assets/twittIcon.png', '../assets/googleIcon.png']
-      },
+        icon: ['../assets/facebookIcon.png', '../assets/instaIcon.png', '../assets/twittIcon.png', '../assets/googleIcon.png'],
+      }
+    },
+    nav: {
       serviceBlock: ['Services', 'About', 'Our story', 'Benefits', 'Branding',],
       legalBlock: ['Legal', 'Terms & Conditions', 'Privecy Policy', 'Terms of use'],
-    },
+    }
   },
   mutations: {
     SET_NAME: (state, payload) => {
@@ -141,6 +137,9 @@ export default new Vuex.Store({
     },
     FOOTER: state => {
       return state.footerContent
+    },
+    NAV: state => {
+      return state.nav
     },
   },
   actions: {
