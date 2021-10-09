@@ -37,6 +37,10 @@ export default {
   border: 0px;
   color: white;
 }
+.go:hover {
+  box-shadow: 0px 6px 5px #07070769;
+  cursor: pointer;
+}
 button {
   width: 130px;
   height: 40px;

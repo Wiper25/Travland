@@ -13,9 +13,8 @@ export default new Vuex.Store({
     popularContent: {
       title: 'Popular Location',
       text: `For every one of us, travel came first. We’ve spent years living as nomads, pioneers, and voyagers— from island hopping in the`,
-      cardCity: {
         turkey: {
-          img: '../assets/imgTurkey.png',
+          img: "../assets/imgTurkey.png",
           title: 'Istanbul, Turkey',
           text: 'Istanbul is a major city in Turkey that straddles Europe.'
         },
@@ -30,12 +29,10 @@ export default new Vuex.Store({
           text: 'South Korea officially the Republic of Korea is a country in East Asia.'
 
         }
-      }
     },
     sliderContent: {
       title: 'Special Offers',
       text: 'With the New Year comes a refreshing sense of wanderlust, a longing in our souls to escape to warmer climates, ',
-      sliderCard: {
         newYork: {
           img: '../assets/newYork.png',
           title: 'Statue of Liberty.',
@@ -76,7 +73,6 @@ export default new Vuex.Store({
           term: '4 Day 5 Nights',
           price: '$700/person'
         }
-      }
     },
     newsContent: {
       title: 'From Blog & News',

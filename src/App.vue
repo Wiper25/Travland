@@ -8,6 +8,7 @@
           <popularLocat />
           <sliderLocat />
           <newsLocat />
+          <hr />
           <footerSite />
         </div>
       </div>
